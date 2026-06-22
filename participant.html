@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manthan Live - Participant View</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f141e 0%, #1e272e 100%);
+            --accent: #0984e3;
+            --success: #0be881;
+            --warning: #fbc531;
+            --danger: #ff3f34;
+        }
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: var(--bg-gradient);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        /* Giant MANTHAN Watermark */
+        body::before {
+            content: 'MANTHAN';
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            font-size: 25vw; font-weight: 900; color: rgba(255, 255, 255, 0.02);
+            z-index: -1; white-space: nowrap; pointer-events: none; user-select: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+            padding-bottom: 15px;
+            z-index: 10;
+        }
+        .header h1 { margin: 0; font-weight: 900; color: var(--warning); letter-spacing: 2px; text-transform: uppercase; font-size: 1.8em;}
+
+        .screen { display: none; width: 100%; max-width: 600px; flex-direction: column; gap: 15px; z-index: 10; animation: fadeIn 0.4s ease-in-out;}
+        .screen.active { display: flex; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px);} to { opacity: 1; transform: translateY(0);} }
+
+        .card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 20px; backdrop-filter: blur(10px); }
+        .badge { background: var(--accent); color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.8em; font-weight: 700; display: inline-block; margin-bottom: 10px; }
+        
+        /* POSER STYLES */
+        .poser-text { font-size: 1.15em; line-height: 1.6; margin: 0; white-space: pre-wrap;}
+        .conclusion-box { border-left: 5px solid var(--success); background: rgba(11, 232, 129, 0.1); display: none;}
+        .conclusion-title { color: var(--success); margin: 0 0 8px 0; font-size: 1em; text-transform: uppercase; }
+
+        /* READER STYLES */
+        .reader-card { text-align: center; display: none; background: rgba(255, 255, 255, 0.08); border-color: rgba(255,255,255,0.2);}
+        .reader-name { font-size: 1.4em; font-weight: 800; color: #b2bec3; margin: 0 0 5px 0; transition: color 0.2s;}
+        .reader-name.final { color: var(--success); text-shadow: 0 0 10px rgba(11, 232, 129, 0.5); transform: scale(1.05); transition: all 0.3s;}
+        .reader-prof { font-size: 0.9em; color: #b2bec3; margin: 0; font-style: italic;}
+
+        /* IDLE / WAITING STYLES */
+        .idle-msg { text-align: center; color: #b2bec3; font-size: 1.2em; margin-top: 50px; padding: 20px; font-weight: 600;}
+        .concluded-badge { color: var(--success); font-weight: 800; font-size: 1.2em; letter-spacing: 2px; margin-bottom: 10px; text-shadow: 0 0 10px rgba(11, 232, 129, 0.4); text-align: center;}
+        
+        /* BREAK STYLES */
+        .break-card { text-align: center; background: transparent; border: none; padding-top: 40px;}
+        .break-title { font-size: 2em; color: var(--warning); margin: 0 0 10px 0; letter-spacing: 4px; text-shadow: 0 2px 10px rgba(0,0,0,0.5);}
+        .break-time { font-size: 5em; font-weight: 800; color: #fff; font-variant-numeric: tabular-nums; line-height: 1; text-shadow: 0 5px 20px rgba(0,0,0,0.5); margin: 0;}
+
+        /* STATS STYLES */
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;}
+        .stat-box { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px; text-align: center; border-top: 4px solid;}
+        .sb-1 { border-color: var(--success); } .sb-2 { border-color: var(--accent); } .sb-3 { border-color: #9b59b6; grid-column: span 2;}
+        .stat-val { font-size: 2em; font-weight: 900; margin: 0; color: #fff;}
+        .stat-lbl { font-size: 0.8em; color: #b2bec3; margin-top: 5px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>MANTHAN</h1>
+    </div>
+
+    <div id="screen-idle" class="screen active">
+        <div class="idle-msg" id="idle-text">Waiting for the session to begin...</div>
+    </div>
+
+    <div id="screen-concluded" class="screen">
+        <div class="concluded-badge">✨ RECENTLY CONCLUDED</div>
+        <div class="card" style="text-align: center;">
+            <p class="badge" id="conc-badge" style="margin-bottom: 5px;">Poser 1.1</p>
+            <h2 id="conc-speaker" style="margin: 10px 0; color: var(--warning); font-size: 1.5em;">Speaker Name</h2>
+            <p id="conc-time" style="color: #b2bec3; margin: 0; font-size: 0.9em;">Discussion Time: 00:00</p>
+        </div>
+    </div>
+
+    <div id="screen-active" class="screen">
+        <div class="card reader-card" id="reader-card">
+            <p class="reader-name" id="reader-name">Reader Name</p>
+            <p class="reader-prof" id="reader-prof">Profile</p>
+        </div>
+        
+        <div class="card">
+            <div class="badge" id="poser-badge">Poser Topic</div>
+            <p class="poser-text" id="poser-text">Poser Text...</p>
+        </div>
+
+        <div class="card conclusion-box" id="poser-concl-card">
+            <h3 class="conclusion-title">💡 Dais Conclusion</h3>
+            <p class="poser-text" id="poser-concl" style="font-size: 1.05em;">Conclusion...</p>
+        </div>
+    </div>
+
+    <div id="screen-break" class="screen">
+        <div class="card break-card">
+            <h1 class="break-title" id="break-main-title">BREAK</h1>
+            <p class="break-time" id="break-time">00:00</p>
+            
+            <div class="stat-grid" id="break-stats-grid">
+                <div class="stat-box sb-1"><p class="stat-val" id="stat-posers">0</p><p class="stat-lbl">Posers</p></div>
+                <div class="stat-box sb-2"><p class="stat-val" id="stat-voices">0</p><p class="stat-lbl">Voices</p></div>
+                <div class="stat-box sb-3"><p class="stat-val" id="stat-time" style="color:var(--warning);">0s</p><p class="stat-lbl">Total Time</p></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const broadcast = new BroadcastChannel('manthan_live_channel');
+        
+        // Screens
+        const scrIdle = document.getElementById('screen-idle');
+        const scrConcluded = document.getElementById('screen-concluded');
+        const scrActive = document.getElementById('screen-active');
+        const scrBreak = document.getElementById('screen-break');
+
+        // Elements
+        const pBadge = document.getElementById('poser-badge');
+        const pText = document.getElementById('poser-text');
+        const pConclCard = document.getElementById('poser-concl-card');
+        const pConcl = document.getElementById('poser-concl');
+        
+        const rCard = document.getElementById('reader-card');
+        const rName = document.getElementById('reader-name');
+        const rProf = document.getElementById('reader-prof');
+
+        let spinInt = null;
+
+        function showScreen(screenEl) {
+            if(spinInt) clearInterval(spinInt);
+            scrIdle.classList.remove('active');
+            scrConcluded.classList.remove('active');
+            scrActive.classList.remove('active');
+            scrBreak.classList.remove('active');
+            screenEl.classList.add('active');
+        }
+
+        function renderStats(stats) {
+            if(!stats) return;
+            document.getElementById('stat-posers').innerText = stats.conquered || 0;
+            document.getElementById('stat-voices').innerText = stats.voices || 0;
+            document.getElementById('stat-time').innerText = stats.totalTime || "0s";
+        }
+
+        broadcast.onmessage = (event) => {
+            const data = event.data;
+
+            if (data.action === 'CLEAR_SCREEN') {
+                showScreen(scrIdle);
+            } 
+            else if (data.action === 'SHOW_POSER') {
+                showScreen(scrActive);
+                pBadge.innerText = `Poser ${data.no} | ${data.chapter}`;
+                pText.innerText = data.text;
+                pConclCard.style.display = 'none';
+                rCard.style.display = 'none';
+            }
+            else if (data.action === 'START_SPIN') {
+                showScreen(scrActive);
+                rCard.style.display = 'block';
+                rName.classList.remove('final');
+                
+                const pool = data.pool || [];
+                if(pool.length > 0) {
+                    spinInt = setInterval(() => {
+                        let r = pool[Math.floor(Math.random() * pool.length)];
+                        rName.innerText = `${r.name} (${r.city})`;
+                        rProf.innerText = r.profile || '';
+                    }, 50); // Slightly slower spin for mobile browsers to render smoothly
+                } else {
+                    rName.innerText = "Selecting Reader...";
+                    rProf.innerText = "";
+                }
+            }
+            else if (data.action === 'SHOW_READER') {
+                if(spinInt) clearInterval(spinInt);
+                showScreen(scrActive);
+                rCard.style.display = 'block';
+                rName.innerText = `${data.name} (${data.city})`;
+                rName.classList.add('final'); 
+                rProf.innerText = data.profile || '';
+            }
+            else if (data.action === 'SHOW_CONCLUSION') {
+                pConcl.innerText = data.conclusion;
+                pConclCard.style.display = 'block';
+                // Scroll to bottom so they see the conclusion on small screens
+                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            }
+            else if (data.action === 'SHOW_CONCLUDED') {
+                showScreen(scrConcluded);
+                document.getElementById('conc-badge').innerText = `Poser ${data.poser.no}`;
+                document.getElementById('conc-speaker').innerText = data.poser.readerName || 'Open Floor Discussion';
+                document.getElementById('conc-time').innerText = `Discussion Time: ${data.poser.timeTaken || '00:00'}`;
+            }
+            else if (data.action === 'SHOW_STATS') {
+                showScreen(scrBreak);
+                document.getElementById('break-main-title').innerText = "SESSION METRICS";
+                document.getElementById('break-time').style.display = 'none';
+                renderStats(data.stats);
+            }
+            else if (data.action === 'START_BREAK') {
+                showScreen(scrBreak);
+                document.getElementById('break-main-title').innerText = "BREAK";
+                document.getElementById('break-time').style.display = 'block';
+                document.getElementById('break-time').innerText = data.timeStr;
+                renderStats(data.stats);
+            }
+            else if (data.action === 'BREAK_UPDATE') {
+                document.getElementById('break-time').innerText = data.timeStr;
+            }
+        };
+    </script>
+</body>
+</html>
