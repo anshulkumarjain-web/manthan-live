@@ -1,0 +1,572 @@
+{
+  "version": "20.1",
+  "id": "evt_1782113301974",
+  "name": "Manthan 2027",
+  "date": "6/22/2026",
+  "activePosers": [
+    {
+      "uid": "UID-101",
+      "no": "1.1",
+      "chapter": "1. Board Meetings",
+      "text": "Can a director participate in a board meeting via video conferencing if the agenda includes the approval of the annual financial statements?",
+      "conclusion": "No. While video conferencing is generally allowed, certain restricted items, including the approval of the annual financial statements and Board's report, require physical presence unless a quorum is already physically present.",
+      "resource": "Section 173(2) of the Companies Act, 2013 read with Rule 4 of the Companies (Meetings of Board and its Powers) Rules, 2014.",
+      "status": "Discussed",
+      "readerId": "PID-018",
+      "readerName": "Shruti Rao (PID-018)",
+      "timeTaken": "00:55",
+      "locked": true
+    },
+    {
+      "uid": "UID-102",
+      "no": "1.2",
+      "chapter": "1. Board Meetings",
+      "text": "Is it mandatory to record the proceedings of a board meeting held through electronic mode, and how long should the recordings be preserved?",
+      "conclusion": "Yes, it is mandatory. The company must record the proceedings and store them securely until the time of completion of the audit of that particular year, after which they may be destroyed.",
+      "resource": "Rule 3(3) of the Companies (Meetings of Board and its Powers) Rules, 2014.",
+      "status": "Discussed",
+      "readerId": "PID-001",
+      "readerName": "Rajesh Kumar (PID-001)",
+      "timeTaken": "01:29",
+      "locked": true
+    },
+    {
+      "uid": "UID-103",
+      "no": "1.3",
+      "chapter": "1. Board Meetings",
+      "text": "If an independent director fails to attend any board meetings for 12 consecutive months, but attends a general meeting, do they vacate their office?",
+      "conclusion": "Yes, the office of the director becomes vacant. The law specifically mandates attendance at meetings of the Board of Directors. Attending a general meeting does not cure the defect of absence from board meetings.",
+      "resource": "Section 167(1)(b) of the Companies Act, 2013.",
+      "status": "Discussed",
+      "readerId": "PID-004",
+      "readerName": "Sneha Reddy (PID-004)",
+      "timeTaken": "00:59",
+      "locked": true
+    },
+    {
+      "uid": "UID-104",
+      "no": "2.1",
+      "chapter": "2. General Meetings",
+      "text": "Can a private limited company hold its Annual General Meeting (AGM) on a national holiday if all shareholders agree?",
+      "conclusion": "No. An AGM must be called during business hours on a day that is not a National Holiday. Consent of shareholders cannot override this specific statutory prohibition.",
+      "resource": "Section 96(2) of the Companies Act, 2013.",
+      "status": "Discussed",
+      "readerId": "PID-006",
+      "readerName": "Ananya Patel (PID-006)",
+      "timeTaken": "00:04",
+      "locked": true
+    },
+    {
+      "uid": "UID-105",
+      "no": "2.2",
+      "chapter": "2. General Meetings",
+      "text": "If a company fails to hold its AGM within the prescribed time, can the National Company Law Tribunal (NCLT) call the meeting?",
+      "conclusion": "Yes. If default is made in holding the AGM, the NCLT may, on the application of any member of the company, call or direct the calling of an AGM and give such ancillary or consequential directions as it thinks expedient.",
+      "resource": "Section 97 of the Companies Act, 2013.",
+      "status": "Discussed",
+      "readerId": "PID-007",
+      "readerName": "Ravi Teja (PID-007)",
+      "timeTaken": "04:47",
+      "locked": true
+    },
+    {
+      "uid": "UID-106",
+      "no": "2.3",
+      "chapter": "2. General Meetings",
+      "text": "Is an explanatory statement required for 'ordinary business' transacted at an AGM?",
+      "conclusion": "No. An explanatory statement is only required to be annexed to the notice for 'special business'. The four items of ordinary business (accounts, dividend, directors, and auditors) do not require it.",
+      "resource": "Section 102(1) of the Companies Act, 2013.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-107",
+      "no": "3.1",
+      "chapter": "3. CSR Compliance",
+      "text": "A company makes a donation to a political party. Can this be claimed as CSR expenditure if the party uses it for social welfare?",
+      "conclusion": "Absolutely not. Direct or indirect contributions to any political party are strictly prohibited from being considered as Corporate Social Responsibility (CSR) activities.",
+      "resource": "Section 135 of the Companies Act, 2013 and Rule 4(1) of the Companies (CSR Policy) Rules, 2014.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-108",
+      "no": "3.2",
+      "chapter": "3. CSR Compliance",
+      "text": "If a company fails to spend the required 2% CSR amount, what happens to the unspent funds at the end of the financial year?",
+      "conclusion": "If the unspent amount relates to an ongoing project, it must be transferred to a special 'Unspent CSR Account' within 30 days. If it does not relate to an ongoing project, it must be transferred to a Fund specified in Schedule VII within 6 months.",
+      "resource": "Section 135(5) and 135(6) of the Companies Act, 2013.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-109",
+      "no": "4.1",
+      "chapter": "4. SEBI LODR",
+      "text": "Must a listed entity intimate stock exchanges about a board meeting where a dividend declaration is to be considered? If so, what is the timeline?",
+      "conclusion": "Yes, prior intimation is mandatory. The listed entity must give notice to the stock exchange at least two working days in advance, excluding the date of the intimation and the date of the meeting.",
+      "resource": "Regulation 29(1)(a) of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-110",
+      "no": "4.2",
+      "chapter": "4. SEBI LODR",
+      "text": "Can the roles of Chairperson and Managing Director/CEO be held by the same individual in a top 500 listed entity?",
+      "conclusion": "Compliance requires separation. For the top 500 listed entities, the Chairperson of the board shall be a non-executive director and not be related to the Managing Director or CEO.",
+      "resource": "Regulation 17(1B) of SEBI (LODR) Regulations, 2015.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-111",
+      "no": "5.1",
+      "chapter": "5. FEMA Regulations",
+      "text": "Can an Indian resident individual open a foreign currency account outside India without RBI permission?",
+      "conclusion": "Yes, an Indian resident can open, hold, and maintain a foreign currency account abroad for making remittances under the Liberalised Remittance Scheme (LRS), up to the prescribed limit (currently USD 250,000 per financial year).",
+      "resource": "Foreign Exchange Management (Foreign Currency Accounts by a Person Resident in India) Regulations, 2015.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-112",
+      "no": "5.2",
+      "chapter": "5. FEMA Regulations",
+      "text": "What is the maximum penalty for a contravention under the Foreign Exchange Management Act (FEMA)?",
+      "conclusion": "The penalty can be up to three times the sum involved in the contravention where the amount is quantifiable, or up to two lakh rupees where the amount is not quantifiable. A continuing penalty of five thousand rupees per day may also apply.",
+      "resource": "Section 13 of the Foreign Exchange Management Act, 1999.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-113",
+      "no": "6.1",
+      "chapter": "6. Independent Directors",
+      "text": "Can an individual serve as an independent director in 10 different public limited companies simultaneously?",
+      "conclusion": "No. An individual cannot serve as an independent director in more than seven listed entities. If the individual is a whole-time director in any listed entity, they can serve as an independent director in a maximum of three listed entities.",
+      "resource": "Regulation 17A of SEBI (LODR) Regulations, 2015.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-114",
+      "no": "6.2",
+      "chapter": "6. Independent Directors",
+      "text": "Is a separate meeting of only independent directors required by law?",
+      "conclusion": "Yes. The independent directors of the company must hold at least one meeting in a financial year, without the attendance of non-independent directors and members of management.",
+      "resource": "Schedule IV, Part VII of the Companies Act, 2013.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-115",
+      "no": "7.1",
+      "chapter": "7. Related Party",
+      "text": "If a transaction is deemed a 'Related Party Transaction' but is carried out at 'arm's length' and in the ordinary course of business, does it require shareholder approval?",
+      "conclusion": "No, shareholder approval under Section 188 of the Companies Act is not required if the transaction is in the ordinary course of business and on an arm's length basis. However, Audit Committee approval is still required.",
+      "resource": "Section 188(1) Proviso of the Companies Act, 2013.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-116",
+      "no": "7.2",
+      "chapter": "7. Related Party",
+      "text": "Who cannot vote on a special resolution to approve a related party transaction in a general meeting?",
+      "conclusion": "Any member of the company who is a related party in the context of the specific contract or arrangement being voted upon cannot vote on such a resolution.",
+      "resource": "Section 188(1) Second Proviso of the Companies Act, 2013.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-117",
+      "no": "8.1",
+      "chapter": "8. Auditors",
+      "text": "Can a statutory auditor of a company also provide investment banking services to the same company?",
+      "conclusion": "No. Statutory auditors are strictly prohibited from providing certain non-audit services to the company, its holding company, or its subsidiary company. Investment banking services fall under this prohibited list.",
+      "resource": "Section 144 of the Companies Act, 2013.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-118",
+      "no": "8.2",
+      "chapter": "8. Auditors",
+      "text": "What is the maximum tenure for an individual auditor in a listed company?",
+      "conclusion": "An individual auditor cannot be appointed or re-appointed for more than one term of five consecutive years. An audit firm can be appointed for two terms of five consecutive years.",
+      "resource": "Section 139(2) of the Companies Act, 2013.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-119",
+      "no": "9.1",
+      "chapter": "9. Dividends",
+      "text": "Can a company declare dividends out of its capital reserves if it has incurred a loss in the current financial year?",
+      "conclusion": "No. Dividends can only be declared out of free reserves (profits available for distribution) subject to fulfilling specific conditions like setting off past losses and depreciation. Capital reserves cannot be used.",
+      "resource": "Section 123 of the Companies Act, 2013 and Companies (Declaration and Payment of Dividend) Rules, 2014.",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    },
+    {
+      "uid": "UID-120",
+      "no": "9.2",
+      "chapter": "9. Dividends",
+      "text": "Once a dividend is declared at an AGM, can it be revoked by the Board of Directors?",
+      "conclusion": "No. Once a dividend is validly declared by the shareholders at an AGM, it becomes a debt payable by the company to the shareholders and cannot be revoked by the Board under any circumstances.",
+      "resource": "Precedent law: Hanuman Prasad Gupta v. Hiralal (1970).",
+      "status": "Pending",
+      "readerId": null,
+      "readerName": null,
+      "timeTaken": null,
+      "locked": false
+    }
+  ],
+  "participants": [
+    {
+      "id": "PID-001",
+      "name": "Rajesh Kumar",
+      "cs": "FCS 4501",
+      "city": "Mumbai",
+      "profile": "Specializes in FEMA, RBI regulations, and cross-border transactions."
+    },
+    {
+      "id": "PID-002",
+      "name": "Priya Sharma",
+      "cs": "ACS 10234",
+      "city": "Delhi",
+      "profile": "Expert in Corporate Restructuring, Mergers, and Acquisitions."
+    },
+    {
+      "id": "PID-003",
+      "name": "Amitabh Desai",
+      "cs": "FCS 3290",
+      "city": "Bengaluru",
+      "profile": "Over 20 years of experience in SEBI LODR and capital market compliance."
+    },
+    {
+      "id": "PID-004",
+      "name": "Sneha Reddy",
+      "cs": "ACS 21098",
+      "city": "Hyderabad",
+      "profile": "Focuses on Corporate Social Responsibility (CSR) and ESG reporting."
+    },
+    {
+      "id": "PID-005",
+      "name": "Vikram Singh",
+      "cs": "FCS 8821",
+      "city": "Pune",
+      "profile": "Legal counsel specializing in insolvency and bankruptcy code (IBC)."
+    },
+    {
+      "id": "PID-006",
+      "name": "Ananya Patel",
+      "cs": "ACS 15672",
+      "city": "Ahmedabad",
+      "profile": "Advises startups on initial funding rounds and compliance management."
+    },
+    {
+      "id": "PID-007",
+      "name": "Ravi Teja",
+      "cs": "FCS 5612",
+      "city": "Chennai",
+      "profile": "Renowned speaker on Board dynamics and corporate governance."
+    },
+    {
+      "id": "PID-008",
+      "name": "Neha Gupta",
+      "cs": "ACS 19845",
+      "city": "Kolkata",
+      "profile": "Expert in Intellectual Property Rights (IPR) and trademark laws."
+    },
+    {
+      "id": "PID-009",
+      "name": "Arjun Malhotra",
+      "cs": "FCS 4432",
+      "city": "Gurugram",
+      "profile": "Consultant for foreign direct investment (FDI) and joint ventures."
+    },
+    {
+      "id": "PID-010",
+      "name": "Kavita Iyer",
+      "cs": "ACS 22341",
+      "city": "Surat",
+      "profile": "Specialist in labor laws, POSH compliance, and HR audits."
+    },
+    {
+      "id": "PID-011",
+      "name": "Sanjay Joshi",
+      "cs": "FCS 7765",
+      "city": "Jaipur",
+      "profile": "Extensive background in auditing public sector undertakings (PSUs)."
+    },
+    {
+      "id": "PID-012",
+      "name": "Meera Krishnan",
+      "cs": "ACS 17654",
+      "city": "Lucknow",
+      "profile": "Advises listed companies on insider trading regulations."
+    },
+    {
+      "id": "PID-013",
+      "name": "Tarun Verma",
+      "cs": "FCS 9012",
+      "city": "Chandigarh",
+      "profile": "Expert in winding up procedures and strike-off of companies."
+    },
+    {
+      "id": "PID-014",
+      "name": "Pooja Agarwal",
+      "cs": "ACS 24567",
+      "city": "Indore",
+      "profile": "Provides secretarial audit services for large manufacturing firms."
+    },
+    {
+      "id": "PID-015",
+      "name": "Rakesh Menon",
+      "cs": "FCS 3345",
+      "city": "Bhopal",
+      "profile": "Focuses on commercial contract drafting and arbitration."
+    },
+    {
+      "id": "PID-016",
+      "name": "Divya Nair",
+      "cs": "ACS 28901",
+      "city": "Nagpur",
+      "profile": "Specializes in the compliance of Non-Banking Financial Companies (NBFCs)."
+    },
+    {
+      "id": "PID-017",
+      "name": "Manish Tiwari",
+      "cs": "FCS 6543",
+      "city": "Patna",
+      "profile": "Authority on the Prevention of Money Laundering Act (PMLA)."
+    },
+    {
+      "id": "PID-018",
+      "name": "Shruti Rao",
+      "cs": "ACS 31092",
+      "city": "Vadodara",
+      "profile": "Helps SMEs transition to the main board stock exchange."
+    },
+    {
+      "id": "PID-019",
+      "name": "Gaurav Chawla",
+      "cs": "FCS 5432",
+      "city": "Ludhiana",
+      "profile": "Expert in real estate regulations and RERA compliance."
+    },
+    {
+      "id": "PID-020",
+      "name": "Nidhi Deshpande",
+      "cs": "ACS 29876",
+      "city": "Nashik",
+      "profile": "Practicing professional focused on statutory drafting and representation."
+    }
+  ],
+  "audit": [
+    {
+      "timestamp": "22/6/2026, 1:12:21 pm",
+      "action": "Event Renamed",
+      "details": "Event renamed to Manthan 2027"
+    },
+    {
+      "timestamp": "22/6/2026, 1:12:13 pm",
+      "action": "Event Renamed",
+      "details": "Event renamed to Welcome to Manthan 2027"
+    },
+    {
+      "timestamp": "22/6/2026, 1:11:56 pm",
+      "action": "Event Renamed",
+      "details": "Event renamed to Manthan 2027Manthan 2027Manthan 2027"
+    },
+    {
+      "timestamp": "22/6/2026, 1:11:46 pm",
+      "action": "Session Resumed",
+      "details": "Workspace opened."
+    },
+    {
+      "timestamp": "22/6/2026, 1:02:56 pm",
+      "action": "Break Started",
+      "details": "Break of 5 minutes initiated."
+    },
+    {
+      "timestamp": "22/6/2026, 1:00:04 pm",
+      "action": "Break Stopped",
+      "details": "Break timer stopped/cleared manually."
+    },
+    {
+      "timestamp": "22/6/2026, 12:59:20 pm",
+      "action": "Break Started",
+      "details": "Break of 30 minutes initiated."
+    },
+    {
+      "timestamp": "22/6/2026, 12:58:24 pm",
+      "action": "Session Resumed",
+      "details": "Workspace opened."
+    },
+    {
+      "timestamp": "22/6/2026, 11:47:24 am",
+      "action": "Status Update",
+      "details": "Poser [UID-105] -> Discussed."
+    },
+    {
+      "timestamp": "22/6/2026, 11:42:31 am",
+      "action": "Reader Assigned",
+      "details": "Ravi Teja assigned to [UID-105]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:42:28 am",
+      "action": "Status Update",
+      "details": "Poser [UID-105] -> In Progress."
+    },
+    {
+      "timestamp": "22/6/2026, 11:42:28 am",
+      "action": "Presenter Mode",
+      "details": "Opened View for [UID-105]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:37:56 am",
+      "action": "Status Update",
+      "details": "Poser [UID-104] -> Discussed."
+    },
+    {
+      "timestamp": "22/6/2026, 11:37:53 am",
+      "action": "Reader Assigned",
+      "details": "Ananya Patel assigned to [UID-104]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:37:46 am",
+      "action": "Status Update",
+      "details": "Poser [UID-104] -> In Progress."
+    },
+    {
+      "timestamp": "22/6/2026, 11:37:46 am",
+      "action": "Presenter Mode",
+      "details": "Opened View for [UID-104]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:34:11 am",
+      "action": "Break Stopped",
+      "details": "Break timer stopped/cleared manually."
+    },
+    {
+      "timestamp": "22/6/2026, 11:31:40 am",
+      "action": "Status Update",
+      "details": "Poser [UID-103] -> Discussed."
+    },
+    {
+      "timestamp": "22/6/2026, 11:30:44 am",
+      "action": "Reader Assigned",
+      "details": "Sneha Reddy assigned to [UID-103]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:30:36 am",
+      "action": "Status Update",
+      "details": "Poser [UID-103] -> In Progress."
+    },
+    {
+      "timestamp": "22/6/2026, 11:30:36 am",
+      "action": "Presenter Mode",
+      "details": "Opened View for [UID-103]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:27:48 am",
+      "action": "Break Started",
+      "details": "Break of 45 minutes initiated."
+    },
+    {
+      "timestamp": "22/6/2026, 11:27:03 am",
+      "action": "Status Update",
+      "details": "Poser [UID-102] -> Discussed."
+    },
+    {
+      "timestamp": "22/6/2026, 11:26:43 am",
+      "action": "Reader Assigned",
+      "details": "Rajesh Kumar assigned to [UID-102]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:25:28 am",
+      "action": "Status Update",
+      "details": "Poser [UID-102] -> In Progress."
+    },
+    {
+      "timestamp": "22/6/2026, 11:25:28 am",
+      "action": "Presenter Mode",
+      "details": "Opened View for [UID-102]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:25:14 am",
+      "action": "Status Update",
+      "details": "Poser [UID-101] -> Discussed."
+    },
+    {
+      "timestamp": "22/6/2026, 11:24:29 am",
+      "action": "Reader Assigned",
+      "details": "Shruti Rao assigned to [UID-101]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:24:13 am",
+      "action": "Status Update",
+      "details": "Poser [UID-101] -> In Progress."
+    },
+    {
+      "timestamp": "22/6/2026, 11:24:13 am",
+      "action": "Presenter Mode",
+      "details": "Opened View for [UID-101]"
+    },
+    {
+      "timestamp": "22/6/2026, 11:21:15 am",
+      "action": "Session Resumed",
+      "details": "Workspace opened."
+    },
+    {
+      "timestamp": "22/6/2026, 11:21:15 am",
+      "action": "Event Created",
+      "details": "Workspace initialized."
+    }
+  ]
+}
